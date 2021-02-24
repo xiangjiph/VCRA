@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+   <computeQ>
+      <basic_link_feature>[true]</basic_link_feature>
+      <basic_node_feature>[true]</basic_node_feature>
+      <basic_reconstruction>[true]</basic_reconstruction>
+      <node_path_to_nearest_neighbor>[true]</node_path_to_nearest_neighbor>
+      <link_shortest_path>[true]</link_shortest_path>
+      <dist_tissue_2_vessel>[true]</dist_tissue_2_vessel>
+      <dimension>[false]</dimension>
+      <max_z_proj>[true]</max_z_proj>
+      <capillary_branching_order>[true]</capillary_branching_order>
+      <capillary_artery_order>NaN</capillary_artery_order>
+      <capillary_vein_order>NaN</capillary_vein_order>
+      <noncapillary_DT>[true]</noncapillary_DT>
+      <dist_to_brain_surface>[true]</dist_to_brain_surface>
+      <ep2ep_anisotropy>[true]</ep2ep_anisotropy>
+      <volume_weighted_ep2ep_anisotropy>[true]</volume_weighted_ep2ep_anisotropy>
+      <capillary_ep2ep_anisotropy>[true]</capillary_ep2ep_anisotropy>
+      <capillary_volume_weighted_ep2ep_anisotropy>[true]</capillary_volume_weighted_ep2ep_anisotropy>
+   </computeQ>
+   <vis_dim_fit>[false]</vis_dim_fit>
+   <dim_fit_cutoff_length>25</dim_fit_cutoff_length>
+   <recon_max_error_rate>0.1</recon_max_error_rate>
+   <merge_neighbor_nodes_Q>[false]</merge_neighbor_nodes_Q>
+   <max_merge_length>5</max_merge_length>
+   <always_merge_max_length>1</always_merge_max_length>
+   <capillary_max_radius>3.5</capillary_max_radius>
+   <brain_mask_fp>/data/Vessel/WholeBrain/ML_2019_01_24/processed_data/mask/whole_brain_d16x_registration/WholeBrain_ML_2019_01_24_d16x_registration_mask.nii.gz</brain_mask_fp>
+   <brain_mask_downsample_rate>16</brain_mask_downsample_rate>
+   <overwrite_computed_featureQ>[false]</overwrite_computed_featureQ>
+</data>
