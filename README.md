@@ -56,8 +56,8 @@ The spatial graph representation of the vascular network is stored as a MATLAB s
        author={Ji, Xiang and Ferreira, Tiago and Friedman, Beth and Liu, Rui and Liechty, Hannah and Bas, Erhan and Chandrasheka, Jayaram and Kleinfeld, David}, 
        journal={Neuron},
        volume={109},
-       number={},
-       pages={},
+       number={7},
+       pages={P1168-1187.E13},
        year={2021},
        publisher={Elsevier},
        url={https://doi.org/10.1016/j.neuron.2021.02.006}}
