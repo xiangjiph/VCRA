@@ -112,6 +112,9 @@ for iter_link = 1 : num_l
         tmp_num_voxel = numel(tmp_ind);        
         lf.ep1_sub(:, iter_link) = tmp_sub(1, :);
         lf.ep2_sub(:, iter_link) = tmp_sub(end, :);
+        % Record middle point local and global coordinate
+        tmp_mid_idx = ceil(tmp_num_voxel / 2);
+        lf.mid_sub(:, iter_link) = tmp_sub(tmp_mid_idx, :);  
         if tmp_num_voxel > 1            
             tmp_ep1_to_ep2_voxel_vec = tmp_sub(end, :) - tmp_sub(1, :);
             tmp_ep1_to_ep2_vec_norm = sqrt(sum((tmp_ep1_to_ep2_voxel_vec ).^2));
@@ -147,10 +150,6 @@ for iter_link = 1 : num_l
             lf.cc_sub_pca2_vec(:, iter_link) = svd_vec(:,2);
             lf.cc_sub_pca3_vec(:, iter_link) = svd_vec(:,3);
             lf.cc_sub_cov_eig_val(:, iter_link) = svd_val([1, 5, 9]);
-            
-            % Record middle point local and global coordinate
-            tmp_mid_idx = ceil(tmp_num_voxel / 2);
-            lf.mid_sub(:, iter_link) = tmp_sub(tmp_mid_idx, :);  
         end
     end
     if compute_dtQ

@@ -116,7 +116,7 @@ for iter_node = 1 : num_node
     end
     tmp_ep_ori_cos = tmp_neighbor_link_ep_ori_vec.' * tmp_neighbor_link_ep_ori_vec;
     tmp_ep_ori_cos = tmp_ep_ori_cos(tril(tmp_ep_ori_cos, -1) ~= 0);
-    if any(tmp_ep_ori_cos > 1 | tmp_ep_ori_cos < -1)
+    if any(tmp_ep_ori_cos > 1 + 1e-6 | tmp_ep_ori_cos < -1 - 1e-6)
         warning('link_ori_ep_cos is out of range');
         disp(tmp_ep_ori_cos);
         tmp_ep_ori_cos = min(1, max(-1, tmp_ep_ori_cos));
@@ -125,7 +125,7 @@ for iter_node = 1 : num_node
     
     tmp_ep2ep_cos = tmp_neighbor_link_ep2ep_vec.' * tmp_neighbor_link_ep2ep_vec;
     tmp_ep2ep_cos = tmp_ep2ep_cos(tril(tmp_ep2ep_cos, -1) ~= 0);
-    if any(tmp_ep2ep_cos > 1 | tmp_ep2ep_cos < -1)
+    if any(tmp_ep2ep_cos > 1 + 1e-6 | tmp_ep2ep_cos < -1 - 1e-6)
         warning('link_ep2ep_cos is out of range');
         disp(tmp_ep2ep_cos);
         tmp_ep2ep_cos = min(1, max(-1, tmp_ep2ep_cos));

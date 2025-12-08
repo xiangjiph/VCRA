@@ -11,6 +11,8 @@ end
 ax_hdl.XScale = 'log';
 ax_hdl.YScale = 'log';
 grid(ax_hdl, 'on');
+fit_data_x = fit_data_x(:);
+fit_data_y = fit_data_y(:);
 valid_data_pair_Q = (fit_data_x > 0) & (fit_data_y > 0);
 fit_data_x = fit_data_x(valid_data_pair_Q);
 fit_data_y = fit_data_y(valid_data_pair_Q);
