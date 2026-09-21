@@ -1,3 +1,5 @@
+
+
 # Vascular Connectome Reconstruction and Analysis
 Computational pipeline for reconstructing and analyzing the vascular connectome from lumen-labeled two-photon vascular volumetric images. 
 
@@ -20,7 +22,7 @@ The spatial graph representation of the vascular network is stored as a MATLAB s
    1. `mask_size`: 1 x 3 vector, size of the 3D array that holds the vascular network. The dimensions are in MATLAB subscript order and can be directly used for converting the linear indices of the voxels into the subscripts. 
    2. `mask_size_pad`: 1 x 3 vector, equals `mask_size + 2`. 
    3. `block_voxel`: scalar, number of voxels in the 3D array, equals `prod(mask_size)`. 
-   4. `block_voxel_pad`: scalar, number of voxels in the padded 3D array, equals `prod(maks_size_pad)`.
+   4. `block_voxel_pad`: scalar, number of voxels in the padded 3D array, equals `prod(mask_size_pad)`.
    5. `neighbor_add_pad`: 26 x 1 vector, linear indices difference between a voxel and its 26 (3 x 3 x 3 - 1) neighboring voxels in the 3D array. 
    6. `neighbor_add_pad`: 26 x 1 vector, linear indices difference between a voxel and its 26 (3 x 3 x 3 - 1) neighboring voxels in the padded 3D array. 
    7. `skeleton_voxel`: scalar, number of vessel skeleton voxels. 
@@ -61,4 +63,3 @@ The spatial graph representation of the vascular network is stored as a MATLAB s
        year={2021},
        publisher={Elsevier},
        url={https://doi.org/10.1016/j.neuron.2021.02.006}}
-
